@@ -1,0 +1,46 @@
+site_name: CGDD — Learn Hub
+site_url: https://learn.cgdd.ai/
+site_description: Hands-on & reproducible ML/DS guides, projects, and templates.
+site_author: CGD
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+# De momento SOLO Home para evitar errores si aún no existen otras páginas
+nav:
+  - Home: index.md
+  # Cuando crees nuevas páginas:
+  # - Roadmap: roadmap.md
+  # - About: about.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YOUR-GITHUB-USERNAME
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/YOUR-HANDLE
